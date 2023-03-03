@@ -1,0 +1,67 @@
+# To-Do
+
+- Ask for a Data folder in Groups, with permissions only for oneself, and subfolders can have more permissions
+
+transApp:
+
+- Add error messages, and req()
+- Add a "render" button to transApp to avoid unnecessary computations due to "full reactivity"
+- Use an employee master as the data for UI
+- Use pre-computed occasions for all codes in prdata::occasions
+- Consider: do you really need reactable?
+- Incorporate viridis palette
+
+Not a priority:
+
+- Can add time modified in code that edits Googlesheet; then reactivePoll to check this time and only invalidate when it has changed
+
+
+## Interactive Dashboards
+
+Chris exploring Linux w/ CCS: active, 2023-01-16, 0d
+
+Shinyapps.io documentation: https://docs.posit.co/shinyapps.io/security-and-compliance.html
+
+```{mermaid}
+gantt
+  dateFormat  YYYY-MM-DD
+  excludes weekends
+  section Critical 
+    Completed sick report of 5 employees: milestone, 2023-01-25, 0d
+  section Non-Critical
+    Add calendar indicator for UofG holidays: active, 2023-01-18, 0d
+    Check for multiple sick codes per day: active, 2023-01-25, 2d
+  section Server 
+    Requested Posit letter of standing of security procedures: milestone, ser1, 2023-01-25, 0d
+    Once obtained, request Posit letter approval by UofG IT manager of info sec.: after ser1, 0d
+
+```
+
+## Other
+
+```{mermaid}
+gantt
+%% comment
+  dateFormat  YYYY-MM-DD
+  excludes weekends
+  %% how to use axisFormat  %Y-%m-%d
+  %% and tickInterval 1day
+  section Critical 
+    Remind Claudia of Backlogs report: crit, active, 2023-01-27, 0d
+  section Non-Critical
+    Develop Qualtrics code for Grounds Shovel Route: active, 2023-01-20, 0d
+    Design template for Meeting Notes: active, 2023-01-20, 0d
+    Incorporate Github issues for to-do's: active, 2023-01-20, 0d
+```
+
+<!-- Preparing report app for production     :crit, active, after des1, 10d -->
+
+<!--     Create tests for app             :crit, active, 3d -->
+
+<!--     Send report app into production        :crit, 10d -->
+
+<!--     Add to package documentation           :2d -->
+
+<!--     Add to book                      :1d -->
+
+<!--     Application running                 :milestone, 2023-02-25, 0d -->

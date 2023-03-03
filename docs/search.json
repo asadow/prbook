@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "megamation.html#access-instructions",
+    "href": "megamation.html#access-instructions",
+    "title": "2  Megamation",
+    "section": "2.1 Access Instructions",
+    "text": "2.1 Access Instructions\n\nIT will create your Megamation account.\nCitrix Workspace App needs to be downloaded. It is a secure interface to the webpage where Megamation lives. Download it from here.\nClick “Citrix Workspace app [XXXX] for Windows”. Install it and do not click any optional boxes like “Add account”. \nAdd https://sso.megamation.com/ to your “Chrome Settings - Cookies - Always clear cookies when windows are closed”. See the very bottom of this screenshot:\n\nThe need for clearing cookies is we need a new session id each time we start Chrome.\n\nUsing the link in 4., access Citrix via a private browser (e.g. Chrome’s Incognito Mode) to avoid a cache. You will see this web page.\n\nThe need for the incognito window has to do with CCS encryption where if we get kicked out of UofG’s Central login we cannot log back into Megamation.\n\nClick D in this part of the webpage:\n\nThis application will open on your taskbar with the icon \nNB Never click the outermost X (very top right) on the following screenshot of a Citrix instance; it severs connection to the database and IT will need to reinstate the connection."
+  },
+  {
+    "objectID": "megamation.html#megamation-export-example",
+    "href": "megamation.html#megamation-export-example",
+    "title": "2  Megamation",
+    "section": "2.2 Megamation Export Example",
+    "text": "2.2 Megamation Export Example\n\n2.2.1 Define the export\nClick “Analysis” and then “Export Definition Wizard”.\n\nClick “Next”.\n\nSelect a table.\n\nClick “Next”, and then “Add”. Add among the fields from the table that pops up on the right.\n\nClick “Next” again and again… You can select some options if you want.\n\n\n2.2.2 Do the export\nClick “Analysis” and then “Export Reports”.\n\nClick “Export” at bottom right. Click off “Auto-format Spreadsheet” if you want a faster export.\n NB for big files: the Excel file that pops up after clicking Export” may not be ready and may still be populating. This is why we use “Automated Report” (second image under Define the export) for big exports. “Automated Report” will do automatically do the export in the morning and save it. If not using “Automated Report”, make sure to save the Excel pop-up file before closing.\nClick “Utilities” and the following.\n\nFiles can then be selected to be emailed or downloaded."
+  },
+  {
+    "objectID": "megamation.html#checking-work-orders",
+    "href": "megamation.html#checking-work-orders",
+    "title": "2  Megamation",
+    "section": "2.3 Checking Work Orders",
+    "text": "2.3 Checking Work Orders\nIf Steve asks about a work order, Evan usually follows these steps:\n\nExport Request\n\nPick ML WO Inquiry (Matt Laury Work Order)\nFilter by\n\nBuilding number: e.g. 72\nStatus: CL is closed, so filter out CL if you are looking for open orders\n\nExport\nSort and look for, say, mold in the Work Description\nFind work order number e.g. 192331\n\nWork Order Completion\n\nEnter the work order number\nSee if it was scheduled and when it was issued\n\nThere is no way AFAWK to get date it was scheduled vs. issued"
+  },
+  {
+    "objectID": "megamation.html#notes-on-filters",
+    "href": "megamation.html#notes-on-filters",
+    "title": "2  Megamation",
+    "section": "2.4 Notes on Filters",
+    "text": "2.4 Notes on Filters\n\nFund\n\n100 series: Core of the university\n300 series: ???\n500 series: Ancillary\n\nResidences\nHospitality\nParticular research spaces\n\n\nUnit\n\nI.e. department. “XX” suffix is the set of all suffixes. “99” is general but does not contain other sets.\n\nGrant\n\nE.g. if a researcher needs something to be fixed using their grant money.\n\nProject\n\nUnique code.\nProjects starting with 8 are internal and will not have a grant number."
+  },
+  {
+    "objectID": "preface.html#definitions",
+    "href": "preface.html#definitions",
+    "title": "Preface",
+    "section": "Definitions",
+    "text": "Definitions\n\nWork order: A request/order for work to be done on campus.\nMegamation: Software used by the university to track work. Chapter 2 describes how to access and use Megamation."
+  },
+  {
+    "objectID": "preface.html#physical-resources-organizational-structure",
+    "href": "preface.html#physical-resources-organizational-structure",
+    "title": "Preface",
+    "section": "Physical Resources Organizational Structure",
+    "text": "Physical Resources Organizational Structure\n\n\n\n\n\n\n\n\nG\n\n \n\ncluster_p\n\n PR   \n\nDEC\n\n DEC   \n\nES\n\n ES   \n\nMES\n\n MES   \n\nBOFA\n\n BOFA   \n\nCW\n\n CW  \n\n\nFigure 1: This is the Physical Resources Organizational Structure.\n\n\n\n\n\nDEC: Design Engineering & Construction\nES: Environmental Services\nMES: Maintenance & Energy Services\nBOFA: Business Operations, Finance & Administration\nES: Environmental Sustainability\nCW: Compliance & Wellness"
+  },
+  {
+    "objectID": "preface.html#gantt-diagram",
+    "href": "preface.html#gantt-diagram",
+    "title": "Preface",
+    "section": "Gantt Diagram",
+    "text": "Gantt Diagram\n\n\n\n\ngantt\n  dateFormat  YYYY-MM-DD\n  excludes weekends, 2022-25-23, 2023-01-03\n  title Data Analysis Onboarding\n  \n  section Personel\n  Hire first data analyst  :milestone,    per1, 2022-12-12, 0d\n  \n  section Software\n  Develop Shiny app.   :done,    sof1, 2022-12-20, 30d\n  Create R package   :done,    sof2, 2022-12-20, 20d\n  Add Megamation \"Automatic Report\" feature   :done,    sof3, 2022-12-20, 25d\n  First data report   :done,    sof4, 2023-01-14, 2d\n  Creating R package   :done,    sof5, 2022-12-20, 15d\n  \n  section Equipment\n  Chair fitting   :  equ1, 2023-01-16, 15d"
+  },
+  {
+    "objectID": "done.html#multi-year-summary",
+    "href": "done.html#multi-year-summary",
+    "title": "8  Done",
+    "section": "8.1 Multi-year summary",
+    "text": "8.1 Multi-year summary\nSick report is file “CUPE SICK TIME 220214”. Excel sheet “5 Year Summ”: Sick Days By Employee - 5 Year History\n\n\n\n\ngantt\n  dateFormat  YYYY-MM-DD\n  excludes weekends\n  section Data Access \n    Created sick report as per Meeting Feb. 2, 2023: milestone, 2023-02-02, 3d\n  section Documentation \n    Incorporate department labels: milestone, 2023-02-06, 0d"
+  },
+  {
+    "objectID": "done.html#snow-shovel-route-self-updating-table",
+    "href": "done.html#snow-shovel-route-self-updating-table",
+    "title": "8  Done",
+    "section": "8.2 Snow Shovel Route Self-Updating Table",
+    "text": "8.2 Snow Shovel Route Self-Updating Table\nNB:\nTo add in a Qualtrics chapter:\nMake sure the project name does not have a “/”. Otherwise fetch_survey() will give an error of being unable to remove file ‘C:2CJ/temp.zip’, reason ‘Permission denied’.\n\n\n\n\n\ngantt\n  dateFormat  YYYY-MM-DD\n  excludes weekends\n  section Data Access \n    Had Vicki share Qualtrics data permissions: milestone, 2023-01-24, 1d\n    Called Maria to understand table generation: milestone, 2023-01-30, 0d\n  section Automation\n    Created R code for pulling data: milestone, 2023-01-29, 1d\n    Created R code for cleaning data: milestone, 2023-01-31, 3d\n    Created Google sheet for export: milestone, 2023-02-02, 1d\n    Set script to run daily: milestone, 2023-02-02, 0d\n  section Documentation \n    Documented application: milestone, 2023-02-02, 1d"
+  },
+  {
+    "objectID": "done.html#tasks-for-steve",
+    "href": "done.html#tasks-for-steve",
+    "title": "8  Done",
+    "section": "8.3 Tasks for Steve",
+    "text": "8.3 Tasks for Steve\n\nCUPE 1334 birthdates and seniority dates for active employees for projections of retirements. CUPE 1334 is our PR trades and service local. Show name (sort alphabetical), birth date and start date.\nFor Jan 1, 2022 until now, can you query out any work orders for the following buildings that are coded “DM”? 072, 180, 181, 067, 172, 062, 004, 186, 011, 008. Separate sheets by building."
+  },
+  {
+    "objectID": "done.html#esa-online-logbook-upload",
+    "href": "done.html#esa-online-logbook-upload",
+    "title": "8  Done",
+    "section": "8.4 ESA Online Logbook Upload",
+    "text": "8.4 ESA Online Logbook Upload\n\n\n\n\ngantt\n  dateFormat  YYYY-MM-DD\n  excludes weekends\n  section Critical \n    Successful submission of ESA Logbook: milestone, 2023-01-27, 0d\n  section Automation\n    Created R script for logbook preparation using CP_ESA_WO_REPORT: milestone, 2023-01-25, 2d\n    Emailed Li on weekly receiving the CP_ESA_WO_REPORT report: milestone, 2023-01-27, 0d\n  section Documentation \n    Documented R function: milestone, 2023-01-27, 0d\n    Documented logbook upload process: milestone, 2023-01-27, 1d"
+  },
+  {
+    "objectID": "done.html#sick-report",
+    "href": "done.html#sick-report",
+    "title": "8  Done",
+    "section": "8.5 Sick Report",
+    "text": "8.5 Sick Report\n\n\n\n\ngantt\n  dateFormat  YYYY-MM-DD\n  excludes weekends\n  section Critical \n    Completed sick report of 5 employees: milestone, 2023-01-25, 0d\n  section Automation\n    Created R function for logbook preparation using CP_ESA_WO_REPORT: milestone, 2023-01-25, 2d\n    Emailed Li on weekly receiving the CP_ESA_WO_REPORT report: milestone, 2023-01-27, 0d\n  section Documentation \n    Documented R function: milestone, 2023-01-27, 0d\n    Documented logbook upload process: milestone, 2023-01-27, 1d"
+  },
+  {
+    "objectID": "done.html#other",
+    "href": "done.html#other",
+    "title": "8  Done",
+    "section": "8.6 Other",
+    "text": "8.6 Other\n\n\n\n\ngantt\n%% comment\n  dateFormat  YYYY-MM-DD\n  excludes weekends\n  %% how to use axisFormat  %Y-%m-%d\n  %% and tickInterval 1day\n  section Critical \n    Remind Claudia of Backlogs report: crit, active, 2023-01-27, 0d\n  section Non-Critical\n    Design template for Meeting Notes: active, 2023-01-20, 0d\n    Incorporate Github issues for to-do's: active, 2023-01-20, 0d"
+  }
+]

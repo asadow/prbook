@@ -1,0 +1,72 @@
+# Preface {.unnumbered}
+
+## Definitions
+
+-   Work order: A request/order for work to be done on campus.
+
+-   Megamation: Software used by the university to track work. [Chapter -@sec-megamation] describes how to access and use Megamation.
+
+
+<!-- "Physical Resources"; -->
+<!--     "Design Engineering & Construction"; -->
+<!--     "Environmental Services"; -->
+<!--     "Maintenance & Energy Services"; -->
+<!--     "Business Operations, Finance & Administration"; -->
+<!--     "Environmental Sustainability"; -->
+<!--     "Compliance & Wellness"; -->
+
+## Physical Resources Organizational Structure
+
+```{dot}
+//| label: fig-pr-org
+//| fig-cap: This is the Physical Resources Organizational Structure.
+digraph G {
+    subgraph cluster_p {
+    label = "PR";
+    "DEC";
+    "ES";
+    "MES";
+    "BOFA";
+    "ES";
+    "CW";
+    }
+    }
+    
+```
+
+-   DEC: Design Engineering & Construction
+
+-   ES: Environmental Services
+
+-   MES: Maintenance & Energy Services
+
+-   BOFA: Business Operations, Finance & Administration
+
+-   ES: Environmental Sustainability
+
+-   CW: Compliance & Wellness
+
+## Gantt Diagram
+
+```{mermaid}
+gantt
+  dateFormat  YYYY-MM-DD
+  excludes weekends, 2022-25-23, 2023-01-03
+  title Data Analysis Onboarding
+  
+  section Personel
+  Hire first data analyst  :milestone,    per1, 2022-12-12, 0d
+  
+  section Software
+  Develop Shiny app.   :done,    sof1, 2022-12-20, 30d
+  Create R package   :done,    sof2, 2022-12-20, 20d
+  Add Megamation "Automatic Report" feature   :done,    sof3, 2022-12-20, 25d
+  First data report   :done,    sof4, 2023-01-14, 2d
+  Creating R package   :done,    sof5, 2022-12-20, 15d
+  
+  section Equipment
+  Chair fitting   :  equ1, 2023-01-16, 15d
+
+
+```
+

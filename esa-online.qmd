@@ -1,0 +1,26 @@
+---
+title: "ESA Online Submissions"
+editor: visual
+---
+
+Goal: Successfully upload our work orders to ESA Online.
+
+Currently a Megamation report is generated as below. Remember to specfiy the start and end date at the bottom right.
+
+![](images/paste-FF17F682.png)
+
+This file is to be placed in a shared folder.
+
+An R script will attach and prepare the data in the format necessary for upload to ESA Online.
+
+This link will take you to the ESA website: <https://cssl.esasafe.com/CSS> Do not google for it, as you may end up at a very similar looking portal, where the only difference is the phrase underneath the title "esa online". The right looking portal says "CSS Portal" there, as shown below.
+
+![](images/paste-AD90C473.png)
+
+Logging in will bring you to
+
+![](images/paste-899B5AC7.png)
+
+Hit "tools" on the top right, then "Logbook Entry Uploads". At the next screen below, click "Browse...", find and select the aforementioned file. Hit "Upload". That's it!
+
+![](images/paste-7F4BC4D4.png)

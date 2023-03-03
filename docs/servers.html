@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.189">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Data Analysis for Physical Resources - 6&nbsp; Servers</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./to-do.html" rel="next">
+<link href="./code-quality.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Servers</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Data Analysis for Physical Resources</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="" title="Download" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-download"></i></a>
+    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="./Data-Analysis-for-Physical-Resources.pdf">
+            <i class="bi bi-bi-file-pdf pe-1"></i>
+          Download PDF
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="./Data-Analysis-for-Physical-Resources.epub">
+            <i class="bi bi-bi-journal pe-1"></i>
+          Download ePub
+          </a>
+        </li>
+    </ul>
+    <a href="" title="Share" id="sidebar-tool-dropdown-1" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-share"></i></a>
+    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-1">
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+            <i class="bi bi-bi-twitter pe-1"></i>
+          Twitter
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+            <i class="bi bi-bi-facebook pe-1"></i>
+          Facebook
+          </a>
+        </li>
+    </ul>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Welcome</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./preface.html" class="sidebar-item-text sidebar-link">Preface</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./onboarding.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Onboarding</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./megamation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Megamation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./tasks.html" class="sidebar-item-text sidebar-link">Tasks</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./esa-online.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">ESA Online Submissions</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./quality-control.html" class="sidebar-item-text sidebar-link">Quality Control</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data-quality.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Quality</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./code-quality.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Code Quality</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./servers.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Servers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./to-do.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">To-Do</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./done.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Done</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Appendices</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">resources</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#data-analysis-needs" id="toc-data-analysis-needs" class="nav-link active" data-scroll-target="#data-analysis-needs"><span class="toc-section-number">6.1</span>  Data Analysis Needs</a>
+  <ul class="collapse">
+  <li><a href="#platform-for-interactive-applications" id="toc-platform-for-interactive-applications" class="nav-link" data-scroll-target="#platform-for-interactive-applications"><span class="toc-section-number">6.1.1</span>  Platform for Interactive Applications</a></li>
+  <li><a href="#a-way-to-access-a-server-with-up-to-date-data" id="toc-a-way-to-access-a-server-with-up-to-date-data" class="nav-link" data-scroll-target="#a-way-to-access-a-server-with-up-to-date-data"><span class="toc-section-number">6.1.2</span>  A Way to Access (a Server with) Up-To-Date Data</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/edit/main/servers.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Servers</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="data-analysis-needs" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="data-analysis-needs"><span class="header-section-number">6.1</span> Data Analysis Needs</h2>
+<section id="platform-for-interactive-applications" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="platform-for-interactive-applications"><span class="header-section-number">6.1.1</span> Platform for Interactive Applications</h3>
+<p>There are <a href="https://posit.co/products/open-source/shinyserver/?_ga=2.218758425.1435543973.1677605377-1975567833.1670879814">three options for hosting applications (scroll to bottom for comparison).</a> The center option is 50% off for academic institutions.</p>
+<p><img src="images/paste-B7CB568F.png" class="img-fluid"></p>
+<section id="no-cash-cost-and-internal" class="level4" data-number="6.1.1.1">
+<h4 data-number="6.1.1.1" class="anchored" data-anchor-id="no-cash-cost-and-internal"><span class="header-section-number">6.1.1.1</span> No Cash Cost and Internal</h4>
+<p>The left-most option is the one we host ourselves. There are two options to do this.</p>
+<ol type="1">
+<li>On a Linux distribution using the <a href="https://docs.posit.co/shiny-server/">administrator’s guide.</a> If we want applications to be used by multiple people at the same time (e.g.&nbsp;Claudia and Kristen), this is not the best. <a href="https://stackoverflow.com/questions/59169546/how-do-we-configure-shinyserver-open-source-to-support-concurrent-users">A response on StackOverflow regarding concurrent use</a> describes how “with this option you can find your users hitting multiple times the inputs or interactive outputs and the app seeming stuck”. But this should be fine for now. We can co-ordinate to have one person at a time using each application.</li>
+<li><a href="https://www.shinyproxy.io/">Using Java and Docker containers</a>. We get LDAP authentication, no limits on concurrent usage. I’m not experienced with Docker but happy to learn.</li>
+</ol>
+<p>This may be cash-less and avoid requiring approval from CCS, but it creates hours (and thus costs) of set-up, maintenance, de-bugging, etc.</p>
+</section>
+<section id="cheap-and-external" class="level4" data-number="6.1.1.2">
+<h4 data-number="6.1.1.2" class="anchored" data-anchor-id="cheap-and-external"><span class="header-section-number">6.1.1.2</span> Cheap and External</h4>
+<p>I am already using the right-most option <strong>Shinyapps.io</strong>. This is hosting the <a href="https://physical-resources.shinyapps.io/shovelapp/">snow shovel routes dashboard that self-updates daily.</a> The free option has no user-authentication. I.e. this link is available to anyone. If we pay <strong>$100/month</strong>, we can have user-authentication. The data is still hosted on an external server by the company Posit. (This company produces the open-source tools for R. Services like these is how they make money.) There is no letter of standing of security procedures apart from <a href="https:\docs.posit.co\shinyapps.io\security-and-compliance.html">a page on security compliance.</a></p>
+</section>
+<section id="not-cheap-and-external-but-comprehensive" class="level4" data-number="6.1.1.3">
+<h4 data-number="6.1.1.3" class="anchored" data-anchor-id="not-cheap-and-external-but-comprehensive"><span class="header-section-number">6.1.1.3</span> Not Cheap and External, But Comprehensive</h4>
+<p>The center option <strong>$7500/year (academic pricing)</strong> is a comprehensive service, where not just hosting applications is possible, but also:</p>
+<ul>
+<li><p>Scheduling and managing repeated tasks/jobs more easily than using Windows Task Scheduler or Cron.</p></li>
+<li><p>Providing a website for us where all static reports, books, and parameterized reports I generate are organized, shared, time-stamped, versioned, etc. For parameterized reports, users apart from me can adjust parameters, like below. This is more efficient than someone asking for me to re-run and share a report with different parameters.</p>
+<p><img src="images/paste-5C8D338D.png" class="img-fluid"><img src="images/paste-6201854A.png" class="img-fluid"></p></li>
+<li><p>User access limits, automatic emailing.</p></li>
+<li><p>Again, the company Posit hosts the data and this is the <a href="https:\docs.posit.co\shinyapps.io\security-and-compliance.html">page on security compliance.</a></p></li>
+</ul>
+<p><em>A last option is to make the applications into executable programs through <a href="https://github.com/chasemc/electricShine">Electron</a> and RInno but these projects are dormant/or have mixed reviews regarding success.</em></p>
+</section>
+</section>
+<section id="a-way-to-access-a-server-with-up-to-date-data" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="a-way-to-access-a-server-with-up-to-date-data"><span class="header-section-number">6.1.2</span> A Way to Access (a Server with) Up-To-Date Data</h3>
+<p>Currently when I need up-to-date data, I ask Li to set-up automatic emails. This works for small exports like the CP_ESA report:</p>
+<p><img src="images/paste-AF654981.png" class="img-fluid"></p>
+<p>I download it, throw it into a folder, and run code to process it.</p>
+<p>I’m concerned this method will not scale over-time. For two reasons:</p>
+<ol type="1">
+<li>If an application or report relies on up-to-date data like the <a href="https://physical-resources.shinyapps.io/shovelapp/">snow shovel routes dashboard that self-updates daily</a>, it is more set-and-forget, self-sustaining, and less error-prone to have data hosted somewhere. In the case of the shovel routes, data is hosted on Qualtrics’ servers.</li>
+<li>Certain files I need may be too large or add complexity to code in order to avoid duplication. E.g. 2023’s employee sick transactions, bi-weekly for an application so Stephany can see everyone’s sick occasions. Unlike the ESA data, I cannot receive only 2-weeks worth of data and throw it into a folder. Transaction data gets regularly corrected retroactively. I need the full 2023 data, regularly.</li>
+</ol>
+<p>Basically a similar code interface to Qualtrics’ but for Directline would be best. E.g. when I interface to Qualtrics, I can query data using an R function like</p>
+<p><img src="images/paste-DA634CE0.png" class="img-fluid"></p>
+<p>If it weren’t for this function, I’d need to manually use the Qualtrics’ website to download data, filter it there or elsewhere, pick the columns there or elsewhere, each day.</p>
+<section id="megamation-api" class="level4" data-number="6.1.2.1">
+<h4 data-number="6.1.2.1" class="anchored" data-anchor-id="megamation-api"><span class="header-section-number">6.1.2.1</span> Megamation API</h4>
+<p>They said we can write programs to pull data from their API into our own SQL database on-premise. I am not familiar with SQL, besides that all the filtering, data-cleaning done with SQL code is covered by R. We may not even need MySQL. Perhaps just R code to be able to pull data straight from Directline.</p>
+<p>They mentioned these limits:</p>
+<ul>
+<li><p>Max. load of API is 50MB</p></li>
+<li><p>Request can’t exceed 120 seconds</p></li>
+</ul>
+<p>They don’t concern me, as for now I don’t see us pulling big data through the API.</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./code-quality.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Code Quality</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./to-do.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">To-Do</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

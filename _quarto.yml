@@ -1,0 +1,52 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Data Analysis for Physical Resources"
+  author: "Adam Sadowski"
+  search: true
+  repo-url: https://github.com/
+  repo-actions: [edit]
+  downloads: [pdf, epub]
+  sharing: [twitter, facebook]
+  date: "2023-01-17"
+  chapters:
+    - index.qmd
+    - preface.qmd
+    - onboarding.qmd
+    - megamation.qmd
+    - part: tasks.qmd
+      chapters:
+      - esa-online.qmd
+    - part: quality-control.qmd
+      chapters:
+      - data-quality.qmd
+      - code-quality.qmd
+    - servers.qmd
+    - to-do.qmd
+    - done.qmd
+    - references.qmd
+  appendices:
+    - notes.qmd
+    - resources.qmd
+
+comments:
+  hypothesis: true
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    cover-image: images/paste-31C3F4C5.png
+  pdf:
+    documentclass: scrreprt
+    include-in-header:
+      text: |
+        \usepackage{makeidx}
+        \makeindex
+    include-after-body:
+      text: |
+        \printindex
+

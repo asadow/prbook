@@ -1,0 +1,97 @@
+# Done
+
+## Multi-year summary
+
+Sick report is file "CUPE SICK TIME 220214". Excel sheet "5 Year Summ": Sick Days By Employee - 5 Year History
+```{mermaid}
+gantt
+  dateFormat  YYYY-MM-DD
+  excludes weekends
+  section Data Access 
+    Created sick report as per Meeting Feb. 2, 2023: milestone, 2023-02-02, 3d
+  section Documentation 
+    Incorporate department labels: milestone, 2023-02-06, 0d
+```
+
+
+## Snow Shovel Route Self-Updating Table
+
+
+NB: 
+
+To add in a Qualtrics chapter: 
+
+Make sure the project name does not have a "/". Otherwise `fetch_survey()` will give an error of being unable to remove file 'C:\Users\asadowsk\AppData\Local\Temp\RtmpUbY2CJ/temp.zip', reason
+  'Permission denied'.
+
+```{mermaid}
+gantt
+  dateFormat  YYYY-MM-DD
+  excludes weekends
+  section Data Access 
+    Had Vicki share Qualtrics data permissions: milestone, 2023-01-24, 1d
+    Called Maria to understand table generation: milestone, 2023-01-30, 0d
+  section Automation
+    Created R code for pulling data: milestone, 2023-01-29, 1d
+    Created R code for cleaning data: milestone, 2023-01-31, 3d
+    Created Google sheet for export: milestone, 2023-02-02, 1d
+    Set script to run daily: milestone, 2023-02-02, 0d
+  section Documentation 
+    Documented application: milestone, 2023-02-02, 1d
+```
+
+
+## Tasks for Steve
+
+- CUPE 1334 birthdates and seniority dates for active employees for projections of retirements. CUPE 1334 is our PR trades and service local. Show name (sort alphabetical), birth date and start date.
+- For Jan 1, 2022 until now, can you query out any work orders for the following buildings that are coded "DM"? 072, 180, 181, 067, 172, 062, 004, 186, 011, 008.  Separate sheets by building.
+
+## ESA Online Logbook Upload
+
+```{mermaid}
+gantt
+  dateFormat  YYYY-MM-DD
+  excludes weekends
+  section Critical 
+    Successful submission of ESA Logbook: milestone, 2023-01-27, 0d
+  section Automation
+    Created R script for logbook preparation using CP_ESA_WO_REPORT: milestone, 2023-01-25, 2d
+    Emailed Li on weekly receiving the CP_ESA_WO_REPORT report: milestone, 2023-01-27, 0d
+  section Documentation 
+    Documented R function: milestone, 2023-01-27, 0d
+    Documented logbook upload process: milestone, 2023-01-27, 1d
+
+```
+
+## Sick Report
+
+```{mermaid}
+gantt
+  dateFormat  YYYY-MM-DD
+  excludes weekends
+  section Critical 
+    Completed sick report of 5 employees: milestone, 2023-01-25, 0d
+  section Automation
+    Created R function for logbook preparation using CP_ESA_WO_REPORT: milestone, 2023-01-25, 2d
+    Emailed Li on weekly receiving the CP_ESA_WO_REPORT report: milestone, 2023-01-27, 0d
+  section Documentation 
+    Documented R function: milestone, 2023-01-27, 0d
+    Documented logbook upload process: milestone, 2023-01-27, 1d
+
+```
+
+## Other
+```{mermaid}
+gantt
+%% comment
+  dateFormat  YYYY-MM-DD
+  excludes weekends
+  %% how to use axisFormat  %Y-%m-%d
+  %% and tickInterval 1day
+  section Critical 
+    Remind Claudia of Backlogs report: crit, active, 2023-01-27, 0d
+  section Non-Critical
+    Design template for Meeting Notes: active, 2023-01-20, 0d
+    Incorporate Github issues for to-do's: active, 2023-01-20, 0d
+```
+

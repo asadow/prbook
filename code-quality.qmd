@@ -1,0 +1,42 @@
+# Code Quality
+
+-   Controls
+
+    -   R packages for documentation of data and code
+
+        -   Standardize function names![](images/paste-F452E92E.png)
+
+        -   Read Wickham's Packages: use_package_doc() and edit it to add imports, whether all functions by @import or specific by use_import_from()
+
+    -   renv for app environment/dependency control
+
+    -   git for version control
+
+    -   tests for automated code control
+
+        -   unit (for individual functions)
+
+        -   integration (for interactions between reactives)
+
+        -   functional (for end-to-end experience from a browser)
+
+        -   load (for withstanding traffic)
+
+    -   continuous integration for change control (requires code control and version control) - notifies if changes break or will break an app
+
+-   Organization
+
+    -   Put large functions (and any smaller helper functions that they need) into their own `R/{function-name}.R` file
+
+    -   For complicated apps, read the ["Engineering Shiny"](https://engineering-shiny.org/) book and use the accompanying [golem](https://thinkr-open.github.io/golem/) package
+
+    -   If developing a lot of Shiny apps within your organisation, improve cross-app consistency by putting functions in a shared package
+
+    -   With a long reactive (say \>10 lines), consider pulling it out into a separate function that does not use any reactivity. This has two advantages:
+
+        -   It is much easier to debug and test code if it can be partitioned so that reactivity lives inside of `server()`, and complex computation lives in functions.
+
+        -   When looking at a reactive expression or output, there's no way to easily tell exactly what values it depends on, except by carefully reading the code block. A function definition, however, shows exactly what the inputs are.
+
+        -   The key benefits of a function in the UI tend to be around reducing duplication. The key benefits of functions in a server tend to be around isolation and testing.
+

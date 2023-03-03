@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.189">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Data Analysis for Physical Resources - 1&nbsp; Onboarding</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./megamation.html" rel="next">
+<link href="./preface.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Onboarding</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Data Analysis for Physical Resources</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="" title="Download" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-download"></i></a>
+    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="./Data-Analysis-for-Physical-Resources.pdf">
+            <i class="bi bi-bi-file-pdf pe-1"></i>
+          Download PDF
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="./Data-Analysis-for-Physical-Resources.epub">
+            <i class="bi bi-bi-journal pe-1"></i>
+          Download ePub
+          </a>
+        </li>
+    </ul>
+    <a href="" title="Share" id="sidebar-tool-dropdown-1" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-share"></i></a>
+    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-1">
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+            <i class="bi bi-bi-twitter pe-1"></i>
+          Twitter
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+            <i class="bi bi-bi-facebook pe-1"></i>
+          Facebook
+          </a>
+        </li>
+    </ul>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Welcome</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./preface.html" class="sidebar-item-text sidebar-link">Preface</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./onboarding.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Onboarding</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./megamation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Megamation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./tasks.html" class="sidebar-item-text sidebar-link">Tasks</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./esa-online.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">ESA Online Submissions</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./quality-control.html" class="sidebar-item-text sidebar-link">Quality Control</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data-quality.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Quality</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./code-quality.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Code Quality</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./servers.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Servers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./to-do.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">To-Do</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./done.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Done</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Appendices</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">resources</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#data-flow" id="toc-data-flow" class="nav-link active" data-scroll-target="#data-flow"><span class="toc-section-number">1.1</span>  Data Flow</a></li>
+  <li><a href="#name-sign" id="toc-name-sign" class="nav-link" data-scroll-target="#name-sign"><span class="toc-section-number">1.2</span>  Name-Sign</a></li>
+  <li><a href="#drives" id="toc-drives" class="nav-link" data-scroll-target="#drives"><span class="toc-section-number">1.3</span>  Drives</a></li>
+  <li><a href="#culture" id="toc-culture" class="nav-link" data-scroll-target="#culture"><span class="toc-section-number">1.4</span>  Culture</a></li>
+  <li><a href="#daily-schedule" id="toc-daily-schedule" class="nav-link" data-scroll-target="#daily-schedule"><span class="toc-section-number">1.5</span>  Daily Schedule</a></li>
+  <li><a href="#remote-work" id="toc-remote-work" class="nav-link" data-scroll-target="#remote-work"><span class="toc-section-number">1.6</span>  Remote Work</a></li>
+  <li><a href="#sick-leave-vacation-etc." id="toc-sick-leave-vacation-etc." class="nav-link" data-scroll-target="#sick-leave-vacation-etc."><span class="toc-section-number">1.7</span>  Sick Leave, Vacation, etc.</a></li>
+  <li><a href="#notes-on-claudia" id="toc-notes-on-claudia" class="nav-link" data-scroll-target="#notes-on-claudia"><span class="toc-section-number">1.8</span>  Notes on Claudia</a></li>
+  <li><a href="#meetings" id="toc-meetings" class="nav-link" data-scroll-target="#meetings"><span class="toc-section-number">1.9</span>  Meetings</a></li>
+  <li><a href="#computer-administrator-rights" id="toc-computer-administrator-rights" class="nav-link" data-scroll-target="#computer-administrator-rights"><span class="toc-section-number">1.10</span>  Computer Administrator Rights</a></li>
+  <li><a href="#equipment" id="toc-equipment" class="nav-link" data-scroll-target="#equipment"><span class="toc-section-number">1.11</span>  Equipment</a>
+  <ul class="collapse">
+  <li><a href="#clothing" id="toc-clothing" class="nav-link" data-scroll-target="#clothing"><span class="toc-section-number">1.11.1</span>  Clothing</a></li>
+  <li><a href="#laptop" id="toc-laptop" class="nav-link" data-scroll-target="#laptop"><span class="toc-section-number">1.11.2</span>  Laptop</a></li>
+  <li><a href="#chair" id="toc-chair" class="nav-link" data-scroll-target="#chair"><span class="toc-section-number">1.11.3</span>  Chair</a></li>
+  <li><a href="#humidifier" id="toc-humidifier" class="nav-link" data-scroll-target="#humidifier"><span class="toc-section-number">1.11.4</span>  Humidifier</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/edit/main/onboarding.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Onboarding</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="data-flow" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="data-flow"><span class="header-section-number">1.1</span> Data Flow</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+  A[Person] --&gt; B(Megamation Software)
+  B --&gt; C{Export Definition Wizard}
+  C --&gt; D[Automatic Report]
+  C --&gt; E[Manual Report]
+</pre>
+<div id="mermaid-tooltip-1" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="name-sign" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="name-sign"><span class="header-section-number">1.2</span> Name-Sign</h2>
+<p>Barb makes the name signs. Ask her if you need one.</p>
+</section>
+<section id="drives" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="drives"><span class="header-section-number">1.3</span> Drives</h2>
+<p><img src="images/paste-E035B7C2.png" class="img-fluid"></p>
+<p>H:</p>
+<ul>
+<li><p>Each person has a part of it</p></li>
+<li><p>Documents is a mirror (a link to your H: drive space) &amp; is backed up</p></li>
+</ul>
+<p>G:</p>
+<ul>
+<li>Used to share files with others</li>
+</ul>
+</section>
+<section id="culture" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="culture"><span class="header-section-number">1.4</span> Culture</h2>
+<p>We generally like to help each other. That said, the person working for Claudia before the data analyst position was created received requests so much so that Claudia had to taper them down.</p>
+<p>The data analyst position is more for data projects, but for Megamation queries. The latter are to be done through Megamation, and tailored reports there can be made for individuals.</p>
+<p>Let Claudia know of any requests that come through, as she will help prioritize them/decide if they are within the role of the data analyst.</p>
+</section>
+<section id="daily-schedule" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="daily-schedule"><span class="header-section-number">1.5</span> Daily Schedule</h2>
+<p>Work starts at 8:30. Lunch anytime. We generally leave at 4:30.</p>
+<p>However this is flexible. If you want to start at 8, and leave at 4, that’s ok. Lunch also does not need to be exactly 1 hour.</p>
+</section>
+<section id="remote-work" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="remote-work"><span class="header-section-number">1.6</span> Remote Work</h2>
+<p>People come in Monday to Friday but the IT departments takes 2 afternoons to work from home in order to focus. They prefer to be away from the office on these days due to the number of requests they receive. As a data analyst, you can work from home two full days of the week in order to be as undistracted as possible.</p>
+</section>
+<section id="sick-leave-vacation-etc." class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="sick-leave-vacation-etc."><span class="header-section-number">1.7</span> Sick Leave, Vacation, etc.</h2>
+<p>We don’t use time-cards anymore. We use <a href="https://m.megamation.com/uog/dlweb.php/O4W_MOBILE_MAIN">DirectLine of Megamation</a>.</p>
+<p>Use <strong>Time Keeping</strong> for inputting vacation, sick leave, etc. NB Date is set to current day; set it right or it will be rejected.<img src="images/paste-15194CE2.png" class="img-fluid"></p>
+</section>
+<section id="notes-on-claudia" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="notes-on-claudia"><span class="header-section-number">1.8</span> Notes on Claudia</h2>
+<p>Claudia often has a closed door as she speaks loud (her words). If she’s on the phone, just poke head in her window &amp; wave. She will give thumbs up/down on whether you can come in.</p>
+</section>
+<section id="meetings" class="level2" data-number="1.9">
+<h2 data-number="1.9" class="anchored" data-anchor-id="meetings"><span class="header-section-number">1.9</span> Meetings</h2>
+<p>You can use Outlook to book meeting rooms for individual use using locations PR meeting room 103 010 106 and 105.</p>
+<p>In the stand-alone Outlook application, Scheduling Assistant is great to see when someone is busy.</p>
+<p>For larger meetings, you ca book meeting rooms with Barb.</p>
+</section>
+<section id="computer-administrator-rights" class="level2" data-number="1.10">
+<h2 data-number="1.10" class="anchored" data-anchor-id="computer-administrator-rights"><span class="header-section-number">1.10</span> Computer Administrator Rights</h2>
+<p>Admin. rights were granted to the desktop in the process of trying to solve a 0x1 error in Task Scheduler. This error does not stop task completion, and I solved the error by using UNC paths (as opposed to drive letters) in the scheduled script. Hence, admin. rights may not actually be necessary on the desktop.</p>
+<p>The following applies if desktop has no administrator rights:</p>
+<ul>
+<li><p>The desktop will not have administrator rights due to our internal IT responsibility</p></li>
+<li><p>If needed, you can ask Andrew on Teams and he can remote enter passwords</p></li>
+<li><p>Admin login is needed for many programs:</p>
+<ul>
+<li><p>Keypirinha is a great program for typing to find files as opposed to using File Explorer</p></li>
+<li><p>R command RInno::install_inno() is needed to turn R Shiny applications into standalone executables</p></li>
+<li><p>KeepassXC for password management (or since it was hacked according to Chris Payne, though I believe he confused the program with another), use PMP (on campus) instead</p></li>
+<li><p>RStudio updates</p></li>
+<li><p>Batch Job Rights in order to fix Windows Taskscheduler error 0x1</p>
+<ul>
+<li><p>For rights, alert IT to <a href="https://www.urtech.ca/2019/06/solved-this-task-requires-that-the-user-account-specified-has-log-on-as-batch-job-rights/" class="uri">https://www.urtech.ca/2019/06/solved-this-task-requires-that-the-user-account-specified-has-log-on-as-batch-job-rights/</a></p></li>
+<li><p>For fixing the 0x1 error, see <a href="https://redstapler.co/fix-task-scheduler-0x1-error/" class="uri">https://redstapler.co/fix-task-scheduler-0x1-error/</a></p></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="equipment" class="level2" data-number="1.11">
+<h2 data-number="1.11" class="anchored" data-anchor-id="equipment"><span class="header-section-number">1.11</span> Equipment</h2>
+<section id="clothing" class="level3" data-number="1.11.1">
+<h3 data-number="1.11.1" class="anchored" data-anchor-id="clothing"><span class="header-section-number">1.11.1</span> Clothing</h3>
+<p>The stockroom can supply toques, shirts (polos, dress), sweaters, fleece, and jackets. The stockroom supplies the university with a lot. COVID-19 PPE was supplied through the stockroom, and departments realized what else the stockroom can provide. Hence business boomed.</p>
+<p>Claudia can approve items you would like.</p>
+</section>
+<section id="laptop" class="level3" data-number="1.11.2">
+<h3 data-number="1.11.2" class="anchored" data-anchor-id="laptop"><span class="header-section-number">1.11.2</span> Laptop</h3>
+<p>IT will provide you with a laptop.</p>
+</section>
+<section id="chair" class="level3" data-number="1.11.3">
+<h3 data-number="1.11.3" class="anchored" data-anchor-id="chair"><span class="header-section-number">1.11.3</span> Chair</h3>
+<p>If a new chair is needed and apporved by Chris or Claudia, you may book an appointment with Occupational Health &amp; Wellness for a chair fitting.</p>
+<p>Adam was fitted with a Steelcase Leap Feb.&nbsp;2, 2023.</p>
+</section>
+<section id="humidifier" class="level3" data-number="1.11.4">
+<h3 data-number="1.11.4" class="anchored" data-anchor-id="humidifier"><span class="header-section-number">1.11.4</span> Humidifier</h3>
+<p>Personal humidifiers can also be supplied if the building’s relative humidity cannot be increased in the winter to 40-50%.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./preface.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./megamation.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Megamation</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

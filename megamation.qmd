@@ -1,0 +1,123 @@
+# Megamation {#sec-megamation}
+
+## Access Instructions
+
+1.  IT will create your Megamation account.
+
+2.  **Citrix Workspace App** needs to be downloaded. It is a secure interface to the webpage where Megamation lives. Download it from [here](https://www.citrix.com/downloads/workspace-app/).
+
+3.  Click "Citrix Workspace app \[XXXX\] for Windows". Install it and do **not** click any optional boxes like "Add account". ![](images/paste-9F18CD79.png)
+
+4.  Add https://sso.megamation.com/ to your "Chrome Settings - Cookies - Always clear cookies when windows are closed". See the very bottom of this screenshot:![](images/paste-B97C5881.png)
+
+[The need for clearing cookies is we need a new session id each time we start Chrome.]{.aside}
+
+5.  Using the link in 4., access Citrix via a private browser (e.g. Chrome's Incognito Mode) to avoid a cache. You will see this [web page](https://sso.megamation.com/uog).
+
+[The need for the incognito window has to do with CCS encryption where if we get kicked out of UofG's Central login we cannot log back into Megamation.]{.aside}
+
+6.  Click *D* in this part of the webpage:
+
+    ![](images/paste-EF9D2C62.png)
+
+7.  This application will open on your taskbar with the icon ![](images/paste-F823AE87.png)
+
+8.  NB **Never** click the outermost X (very top right) on the following screenshot of a Citrix instance; it severs connection to the database and IT will need to reinstate the connection.
+
+    ![](images/paste-5F3C0CAF.png)
+
+## Megamation Export Example
+
+### Define the export
+
+Click "Analysis" and then "Export Definition Wizard".
+
+![](images/paste-6E3647FD.png)
+
+Click "[N]{.underline}ext".
+
+![](images/paste-20DE5D3A.png)
+
+Select a table.
+
+![](images/paste-63EB2380.png)
+
+Click "[N]{.underline}ext", and then "Add". Add among the fields from the table that pops up on the right.
+
+![](images/paste-87EAAAE5.png)
+
+Click "[N]{.underline}ext" again and again... You can select some options if you want.
+
+### Do the export
+
+Click "Analysis" and then "Export Reports".
+
+![](images/paste-4B84E0CD.png)
+
+Click "Export" at bottom right. Click off "Auto-format Spreadsheet" if you want a faster export.
+
+![](images/paste-CA669F29.png) [NB for big files: the Excel file that pops up after clicking Export" may not be ready and may still be populating. This is why we use "Automated Report" (second image under **Define the export**) for big exports. "Automated Report" will do automatically do the export in the morning and save it. If not using "Automated Report", make sure to save the Excel pop-up file before closing.]{.aside}
+
+Click "Utilities" and the following.
+
+![](images/paste-CA9DAE7B.png)
+
+Files can then be selected to be emailed or downloaded.
+
+## Checking Work Orders
+
+If Steve asks about a work order, Evan usually follows these steps:
+
+1.  Export Request
+
+    -   Pick ML WO Inquiry (Matt Laury Work Order)
+
+    -   Filter by
+
+        -   Building number: e.g. 72
+
+        -   Status: CL is closed, so filter out CL if you are looking for open orders
+
+    -   Export
+
+    -   Sort and look for, say, mold in the Work Description
+
+    -   Find work order number e.g. 192331
+
+2.  Work Order Completion
+
+    -   Enter the work order number
+
+    -   See if it was scheduled and when it was issued
+
+        -   There is no way AFAWK to get date it was scheduled vs. issued
+
+## Notes on Filters
+
+-   Fund
+
+    -   100 series: Core of the university
+
+    -   300 series: ???
+
+    -   500 series: Ancillary
+
+        -   Residences
+
+        -   Hospitality
+
+        -   Particular research spaces
+
+-   Unit
+
+    -   I.e. department. "XX" suffix is the set of all suffixes. "99" is general but does not contain other sets.
+
+-   Grant
+
+    -   E.g. if a researcher needs something to be fixed using their grant money.
+
+-   Project
+
+    -   Unique code.
+
+    -   Projects starting with 8 are internal and will not have a grant number.
